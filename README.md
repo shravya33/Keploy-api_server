@@ -44,7 +44,6 @@ Content-Type: application/json
 1. **Clone the repository**
    ```bash
    git clone https://github.com/shravya33/Keploy-api_server
-   cd customer-api
    ```
 
 2. **Install dependencies**
