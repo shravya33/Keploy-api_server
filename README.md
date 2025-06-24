@@ -65,3 +65,51 @@ Content-Type: application/json
    ```
 
    The API will be available at `http://localhost:3000`
+
+---
+
+## Testing
+
+This project includes a comprehensive testing suite with three types of tests:
+
+### Testing Frameworks Used
+
+- **Jest**: Main testing framework
+- **Supertest**: HTTP testing library
+- **MongoDB Memory Server**: In-memory MongoDB for testing
+
+### Test Types
+
+### 1. Unit Tests
+Test individual functions in isolation with mocked dependencies.
+
+```bash
+npm run test:unit
+```
+
+**Location**: `tests/unit/`
+
+**Coverage**: Tests controller logic with mocked database operations
+
+### 2. Integration Tests
+Test the interaction between controllers and the database.
+
+```bash
+npm run test:integration
+```
+
+**Location**: `tests/integration/`
+
+**Coverage**: Tests controller + database integration with real (in-memory) MongoDB
+
+### 3. API Tests
+Test HTTP endpoints as a client would use them.
+
+```bash
+npm run test:api
+```
+
+**Location**: `tests/api/`
+
+**Coverage**: Tests complete HTTP request/response cycle
+
